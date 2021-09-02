@@ -1,0 +1,71 @@
+
+.contact_us{
+    
+    background-color: $bg_deep_blue;
+    padding-top: 5em;
+    text-align: center;
+    
+    h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+}
+
+.contact_us_inner_mobile{
+    display: none;
+}
+
+.contact_us_inner_window{
+
+  
+    
+    width:  80% ;
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .address{
+        padding-top: 13em;
+
+       
+
+        .logo{
+            a{
+               
+                font-size: 1.8em;
+                color: $font_color;
+                
+            }
+            margin-bottom: .5em;
+        }
+
+        a{
+            display: inline-block;
+            font-size: 1.5em;
+            color: $font_color;
+            margin-bottom: .3em;
+        }
+    }
+    
+
+}
+
+@media screen and (max-width:50em) {
+    .contact_us_inner_window{
+        display: none;
+    }
+    .contact_us_inner_mobile{
+        display: block;
+
+        .main_address{
+            margin: 0 1em !important;
+        }
+
+        .contact_form{
+            p{
+                margin-top: 1.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.payment_page{
+  background-color: $accent_color;
+  padding: 2em;
+  height: 140vh;
+
+  h2{
+    margin-bottom: 1em;
+  }
+
+  .payment_header_top{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .payment_header{
+    background-color: $bg_deep_blue;
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    display: flex;
+    padding: 1em;
+    min-height: 10em;
+    font-size: 1.2em;
+    justify-content: space-between;
+  }
+
+  .payment_body{
+    border-top-left-radius: .3em !important;
+    border-top-right-radius: .3em !important;
+    background-color: $bg_gray !important;
+    position: absolute;
+    top: 10em;
+    width: 95.4%;
+    
+
+    .payment_body_title{
+      
+      height: 5em;
+      padding: 0 1em;
+      color: $accent_color;
+      font-size: 1.5em;
+      margin-top: 2em;
+      margin-bottom: -1em;
+      margin-left: 9em;
+    }
+
+    form{
+      width: 60%;
+      margin: 0 auto 3em;
+
+      button{
+        padding: .5em 2em;
+        font-size: 1.2em;
+        margin-bottom: 3em;
+      }
+
+      .form_style{
+       
+        height: 2em;
+        width: 100%;
+        margin-bottom: 3em;
+
+        label{
+          color: $font_color;
+        }
+
+        input{
+            height: 100%;
+        }
+    }
+    input, textarea{
+        outline: none;
+        width: 100%;
+        font-size: 1.1em;
+        padding: 1em;
+        border-radius: .3em;
+        border: .2em solid $accent_color;
+        color: $font_color;
+       
+        &::placeholder{
+            color: $font_color;
+        }
+    }
+    }
+
+  }
+}
+
+@media screen and (max-width:80em) {
+  .payment_page{
+    padding: 1em;
+
+    .checkout{
+      display: none;
+    }
+    .payment_body{
+      width: 91%;
+
+      .payment_body_title{
+        margin-left: 0;
+      }
+
+      form{
+        width: 80%;
+      }
+    }
+  }
+}
